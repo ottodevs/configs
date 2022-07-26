@@ -13,14 +13,17 @@ module.exports = {
     singleQuote: true,
     trailingComma: 'all',
     proseWrap: 'preserve',
-    pluginSearchDirs: ['./node_modules'],
-    plugins: ['prettier-plugin-jsdoc', 'prettier-plugin-solidity'],
+    plugins: ['./node_modules/prettier-plugin-solidity', './node_modules/prettier-plugin-jsdoc'],
     overrides: [
         {
             files: 'package.json',
             options: {
                 parser: 'json',
             },
+        },
+        {
+            files: '*.sol',
+            options: { parser: 'solidity-parse' },
         },
     ],
 };
