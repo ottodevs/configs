@@ -9,12 +9,13 @@ module.exports = {
         project: './tsconfig.json',
     },
     env: {
-        es2021: true,
-        jest: true,
-        mocha: true,
-        node: true,
+        'es2021': true,
+        'jest': true,
+        'jest/globals': true,
+        'mocha': true,
+        'node': true,
     },
-    plugins: ['@typescript-eslint', 'chai-friendly', 'unused-imports', 'simple-import-sort', 'import'],
+    plugins: ['@typescript-eslint', 'chai-friendly', 'unused-imports', 'simple-import-sort', 'import', 'jest'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
