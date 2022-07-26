@@ -14,7 +14,7 @@ module.exports = {
     trailingComma: 'all',
     proseWrap: 'preserve',
     pluginSearchDirs: ['./node_modules'],
-    plugins: ['prettier-plugin-jsdoc', 'prettier-plugin-jsdoc'],
+    plugins: ['prettier-plugin-jsdoc', 'prettier-plugin-solidity'],
     overrides: [
         {
             files: 'package.json',
