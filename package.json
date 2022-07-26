@@ -1,5 +1,5 @@
 {
-    "name": "@ottodevs/configs",
+    "name": "@ottodev/configs",
     "private": true,
     "workspaces": ["packages/*"],
     "devDependencies": {},
