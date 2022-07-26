@@ -2,6 +2,8 @@
     "name": "@ottodev/configs",
     "private": true,
     "workspaces": ["packages/*"],
-    "devDependencies": {},
+    "scripts": {
+        "clean": "git clean -fXd"
+    },
     "prettier": "./packages/prettier-config"
 }

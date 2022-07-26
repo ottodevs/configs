@@ -1,17 +1,20 @@
 module.exports = {
     root: true,
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: {
+            impliedStrict: true,
+        },
+        project: './tsconfig.json',
+    },
     env: {
         es2021: true,
         jest: true,
         mocha: true,
         node: true,
     },
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-        ecmaVersion: 'latest',
-        impliedStrict: true,
-        project: ['./tsconfig.json'],
-    },
+    plugins: ['@typescript-eslint', 'chai-friendly', 'unused-imports', 'simple-import-sort', 'import'],
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
@@ -21,7 +24,6 @@ module.exports = {
         'plugin:import/typescript',
         'prettier',
     ],
-    plugins: ['@typescript-eslint', 'chai-friendly', 'unused-imports', 'simple-import-sort', 'import'],
     rules: {
         'import/newline-after-import': 'error',
         'import/no-duplicates': 'error',
@@ -35,11 +37,10 @@ module.exports = {
         'unused-imports/no-unused-imports': 'warn',
         'object-curly-spacing': ['error', 'always'],
         '@typescript-eslint/object-curly-spacing': ['error', 'always'],
-
-        // 'node/no-missing-import': [
-        //     'error',
-        //     { allowModules: ['chai'], resolvePaths: ['test', 'src'], tryExtensions: ['.ts', '.json'] },
-        // ],
-        // 'node/no-unpublished-import': ['error', { allowModules: [''] }],
+    },
+    settings: {
+        'import/resolver': {
+            typescript: {},
+        },
     },
 };
