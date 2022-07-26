@@ -6,18 +6,11 @@ module.exports = {
         mocha: true,
         node: true,
     },
-    settings: {
-        'import/resolver': {
-            // use <root>/tsconfig.json
-            typescript: {},
-        },
-    },
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
         impliedStrict: true,
-        // project: ['../typescript/tsconfig.eslint.json'],
-        tsconfigRootDir: __dirname,
+        project: ['./tsconfig.json'],
     },
     extends: [
         'eslint:recommended',
