@@ -1,0 +1,22 @@
+{
+    "name": "@ottodevs/prettier-config",
+    "version": "0.0.1",
+    "description": "ottodevs' Prettier config",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": ["config", "prettier", "prettier-config"],
+    "author": "Otto G <5030059+ottodevs@users.noreply.github.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ottodevs/configs.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "prettier-plugin-jsdoc": "0.3.38",
+        "prettier-plugin-solidity": "1.0.0-dev.23",
+        "prettier": "2.7.1"
+    }
+}

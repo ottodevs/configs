@@ -1,0 +1,29 @@
+{
+    "name": "@ottodevs/eslint-config",
+    "version": "0.0.1",
+    "description": "ottodevs' ESLint config",
+    "main": "index.js",
+    "scripts": {},
+    "keywords": ["eslint", "eslint-config", "config"],
+    "author": "Otto G <5030059+ottodevs@users.noreply.github.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ottodevs/configs.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "5.30.7",
+        "@typescript-eslint/parser": "5.30.7",
+        "eslint": "8.20.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-plugin-chai-friendly": "0.7.2",
+        "eslint-plugin-import": "2.26.0",
+        "eslint-plugin-simple-import-sort": "7.0.0",
+        "eslint-plugin-unused-imports": "2.0.0",
+        "prettier": "2.7.1",
+        "typescript": "4.7.4"
+    }
+}
