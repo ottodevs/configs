@@ -38,6 +38,7 @@ module.exports = {
         'unused-imports/no-unused-imports': 'warn',
         'object-curly-spacing': ['error', 'always'],
         '@typescript-eslint/object-curly-spacing': ['error', 'always'],
+        'jest/no-standalone-expect': ['error', { additionalTestBlockFunctions: ['each.test'] }],
     },
     settings: {
         'import/resolver': {
